@@ -1,9 +1,18 @@
-import CardCourse from "@/component/Card/CardCourseComponent";
+// Home.js
+import React from 'react';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import CourseCard from "../component/Data/CardCourseData";
+import ContentCard from "../component/Data/DataCardContent";
+
 export default function Home() {
-  return (
-    <main className="">
-      {/* <SlideSection /> */}
-      < CardCourse />
-    </main>
-  );
+    return (
+        <main className="mx-40">
+            <h2 className='font-bold mt-10'>COURSES</h2>
+            <div className="my-4 grid grid-cols-2 gap-6">
+                <CourseCard />
+            </div>
+            <h2 className='font-bold mt-10'>USEFUL CONTENTS</h2>
+            <ContentCard />
+        </main>
+    );
 }
