@@ -3,7 +3,7 @@ import React from 'react';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import CourseCard from "../component/Data/CardCourseData";
 import SlideComponent from "../component/Slide/SlideComponent";
-import CardContent from "../component/Data/DataCardContent";
+import CarouselContent from '@/component/Slide/SlideContent';
 
 export default function Home() {
     return (
@@ -15,7 +15,7 @@ export default function Home() {
                     <CourseCard />
                 </div>
                 <h2 className='font-bold mt-10'>USEFUL CONTENTS</h2>
-                <CardContent/>
+                <CarouselContent/>
             </div>
         </main>
     );
